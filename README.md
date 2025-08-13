@@ -1,2 +1,4 @@
-# fullstackopen
-Exercises for the course Fullstack Open
+# Fullstack Open Course Exercises
+
+## Links
+Fullstack Open Course: https://fullstackopen.com/en
