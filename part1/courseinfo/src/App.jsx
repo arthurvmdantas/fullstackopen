@@ -5,11 +5,18 @@ const Header = (props) => {
   )
 }
 
-// Render the content (receives an array of objects)
-const Content = (props) => {
-  return props.contents.map((content, index) => <p key={index}>{content.part} {content.exercises}</p>)
+// Render a content part
+const Part = (props) => {
+  return (
+    <p>{props.part} {props.exercises}</p>
+  )
 }
 
+// Render the content (receives an array of objects)
+const Content = (props) => {
+  return props.contents.map((content, index) => <Part key={index} part={content.part} exercises={content.exercises} />)
+}
+  
 // Render the total number of exercises
 const Total = (props) => {
   return (
